@@ -4,6 +4,7 @@ import com.taoassignment.model.Task;
 import com.taoassignment.model.TaskStatistics;
 import com.taoassignment.model.TaskStatus;
 import com.taoassignment.repository.TaskRepository;
+import jakarta.persistence.EntityManagerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
@@ -16,10 +17,13 @@ public class TaskService {
 
     private TaskRepository taskRepository;
 
+    private final EntityManagerFactory entityManagerFactory;
+
     @Autowired
-    public TaskService(TaskRepository taskRepository) {
-        this.taskRepository = taskRepository;
+    public TaskService(EntityManagerFactory entityManagerFactory) {
+        this.entityManagerFactory = entityManagerFactory;
     }
+
 
     public Task createTask(Task task) {
         return taskRepository.save(task);
