@@ -7,16 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TaoAssignment" />
+        <module name="tvs-backend" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="TaoAssignment" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="TaoAssignment" options="-parameters" />
+      <module name="PriorityQueue" options="-parameters" />
+      <module name="tvs-backend" options="-parameters" />
     </option>
   </component>
 </project>
