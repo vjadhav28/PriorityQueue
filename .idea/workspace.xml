@@ -287,13 +287,26 @@
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.taoassignment.Main" />
-      <module name="tvs-backend" />
+      <module name="priorityQueueBackend" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.taoassignment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="priorityQueueBackend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="priorityQueueBackend" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
